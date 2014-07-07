@@ -47,6 +47,8 @@
         <javax.jaxb.version>2.2.6</javax.jaxb.version>
         <javax.jsf.version>2.2.7</javax.jsf.version>
 
+        <!-- Everything else can go in the lib directory unless you want more granular control
+             at which time you have to alter the catalina.properties file -->
         <dom4j.version>1.6.1</dom4j.version>
 
         <com.fasterxml.classmate.version>1.0.0</com.fasterxml.classmate.version>
@@ -106,6 +108,7 @@
                     <groupId>org.slf4j</groupId>
                     <artifactId>slf4j-jdk14</artifactId>
                 </exclusion>
+                <!-- From here down are simply updates to existing libs -->
                 <exclusion>
                     <groupId>org.apache.commons</groupId>
                     <artifactId>commons-lang3</artifactId>
